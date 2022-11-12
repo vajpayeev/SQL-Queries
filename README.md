@@ -3,7 +3,8 @@
 SELECT *
 FROM allergies
 
---Patients with specific allergies and counting patients based on various description
+--The queries are trying to understand variuos aspects of healthcare data such as what allergies are common, whether patients are immunized or not, what medication is prescribed for what and patient's careplan using SQL basic functions.
+-- SELECT, DISTINCT, COUNT, WHERE, AND/OR, LIKE, ORDER BY, GROUP BY, JOIN, HAVING, CASE, WHEN/THEN are the main functions used to analyse data.
 
 SELECT *
  FROM allergies
@@ -16,20 +17,17 @@ SELECT COUNT(DISTINCT Observation )
   FROM allergies
 
 
-## Query for diagnosis
 SELECT start, 
         stop, 
 		description as condition
   FROM conditions
   WHERE description =  'Diabetes' or stop IS NOT NULL
 
---To check if patient has any careplan
 
 SELECT * 
  From careplans
  WHERE description = 'Respiratory therapy'\
  
---To know Immunization status and patients with immunizations
 SELECT * 
  FROM immunizations
 
@@ -50,7 +48,6 @@ SELECT TOP 10 *
 
  SELECT COUNT(DISTINCT description)
   FROM immunizations
-
 
 SELECT *
  FROM all_prevalences
