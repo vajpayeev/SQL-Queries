@@ -3,8 +3,12 @@
 SELECT *
 FROM allergies
 
---The queries are trying to understand variuos aspects of healthcare data such as what allergies are common, whether patients are immunized or not, what medication is prescribed for what and patient's careplan using SQL basic functions.
--- SELECT, DISTINCT, COUNT, WHERE, AND/OR, LIKE, ORDER BY, GROUP BY, JOIN, HAVING, CASE, WHEN/THEN are the main functions used to analyse data.
+## The queries are trying to understand variuos aspects of healthcare data such as what allergies are common, whether patients are immunized or not, what medication is prescribed for what and patient's careplan using SQL basic functions.
+
+
+## SELECT, DISTINCT, COUNT, WHERE, AND/OR, LIKE, ORDER BY, GROUP BY, JOIN, HAVING, CASE, WHEN/THEN are the main functions used to analyse data.
+
+
 
 SELECT *
  FROM allergies
